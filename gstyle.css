@@ -1,0 +1,167 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 30px auto;
+  width: 960px;
+  position: relative;
+}
+
+header {
+  padding: 6px 0;
+}   
+
+
+#DevNote {
+font-style:italic;
+}  
+
+#chart {
+	position: relative;
+	top: 50px;
+}
+.group {
+  margin-bottom: 1em;
+}
+
+.axis {
+  font: 10px sans-serif;
+  position: relative;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.axis text {
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
+.axis path {
+  display: none;
+}
+
+.axis line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis.top {
+  background-image: linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -ms-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  top: 0px;
+  padding: 0 0 24px 0;
+}
+ 
+
+
+.axis.bottom {
+  background-image: linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -o-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -moz-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  background-image: -ms-linear-gradient(bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  bottom: 0px;
+  padding: 24px 0 0 0;
+}
+
+.horizon {
+  border-bottom: solid 1px #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.horizon {
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+
+.horizon + .horizon {
+  border-top: none;
+}
+
+.horizon canvas {
+  display: block;
+}
+
+.horizon .title,
+.horizon .value {
+  bottom: 0;
+  line-height: 30px;
+  margin: 0 6px;
+  position: absolute;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  white-space: nowrap;
+}
+
+.horizon .title {
+  left: 0; 
+  font-size:10px;
+}
+
+.horizon .value {
+  right: 0;
+}
+
+.line {
+  background: #000;
+  z-index: 2;  
+}
+
+#menus {
+	height:0px;
+	position:relative;
+	top:20px;
+}   
+
+#drop-menu1 {
+    position:relative;
+	top: -40px;
+	left: 735px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 14px;
+    height: 12px;
+    max-height: 25px;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #f6f0e4;
+    margin: 8px;
+    width: 250px;
+    
+}
+
+    
+	.plus {
+		display: inline-block;
+		-webkit-transition: .3s ease-in-out;
+  		-moz-transition: .3s ease-in-out;
+  		-o-transition: .3s ease-in-out;
+	}
+	
+	#drop-menu1:hover {
+		border: 1px solid #fff;
+	}
+	
+	
+	#drop-menu1 span:hover {
+		border-bottom: 1px dotted #bababa; background: #cff;
+	}   
+	  	
+	#drop-menu1:hover .plus {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+	}
+	    
+#searchbox {width: 410px}   
+#toggleDesc {
+		position:absolute;
+		top:-20px;
+		left:-20px;
+}
+h3 {
+	position:relative;
+	left:20px;
+} 

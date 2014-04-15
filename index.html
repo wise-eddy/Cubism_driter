@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head><meta charset="utf-8">
+<link rel = "stylesheet" href = "gstyle.css">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="cubism.v1.js"></script> 
+</header>
+<body>
+<div id = desc> 
+	  <h3>Drifter data</h3>
+<!--
+	  <p id = DevNote>Dev. Note: altered cubism's default value of axisTimeFormat so that the ruler shows Month-Day instead of only Hour.</p>
+-->
+</div>  
+	<input type = checkbox id = toggleDesc onchange = toggleDesc() checked>
+<div id = menus>
+  <input type = text name = searchbox id = searchbox placeholder = "enter comma separated list of IDs (62582, 101800, 60360, 107600,...)" onchange = searchbox()>,	 or select <span id = all>all</span>: <input type = checkbox id = allInstruments>.
+  <div id="drop-menu1">channel: </div> 
+</div>
+<div id = chart></div>
+<script src = driftcubism.js></script>
+</html>
